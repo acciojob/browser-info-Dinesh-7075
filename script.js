@@ -5,7 +5,7 @@ function browerInfo(){
 
         var result = bowser.getParser(window.navigator.userAgent);
         console.log(result);
-      document.write("You are using " + result.parsedResult.browser.name +
-               " version " + result.parsedResult.browser.version);
+      document.querySelector("#browser-info").innerText = ("You are using" + result.parsedResult.browser.name +
+               "version" + result.parsedResult.browser.version);
 }
 browerInfo();
